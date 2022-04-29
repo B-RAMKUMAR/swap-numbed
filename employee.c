@@ -1,9 +1,11 @@
-#include <stdio.h>
+
+ #include <stdio.h>
 #include <stdlib.h>
  
 typedef struct{
     char name[30];
     int id;
+    char dept[20];
     double salary;
 } Employee;
  
@@ -29,7 +31,8 @@ int main()
         //ID
         printf("Id: ");
         scanf("%d",&employees[i].id);
-
+        printf("dept:");
+        scanf("%s",&employees[i].dept);
         //Salary
         printf("Salary: ");
         scanf("%lf",&employees[i].salary);
@@ -48,6 +51,10 @@ int main()
  
         printf("Id \t: ");
         printf("%d \t",employees[i].id);
+        
+        printf("dept \t: ");
+        printf("%s\t",employees[i].dept);
+        
  
         printf("Salary \t: ");
         printf("%.2lf \t",employees[i].salary);
@@ -57,3 +64,38 @@ int main()
  
     return 0;
 }
+   
+  
+      
+     
+
+  
+
+      
+
+   
+        
+  
+
+        
+
+ 
+       
+    
+ 
+    
+   
+  
+        
+     
+ 
+        
+       
+ 
+        
+
+ 
+
+
+
+
